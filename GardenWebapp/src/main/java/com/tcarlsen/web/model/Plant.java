@@ -8,11 +8,15 @@ public class Plant implements PlantInterface {
 	private final int sidesOfThePlant = 2;
 	
 
-void setSpaceBetwenPlants(double SBP) {spaceBetweenPlants = SBP;}
-void setSpaceBetweenRows(double SBR) {spaceBetweenRows = SBR;}
-void setAmountOfPlants(int AOP) {amountOfPlants = AOP;}
-void setNameOfPlant(String name) {name = name;}
+public void setSpaceBetwenPlants(double SBP) {spaceBetweenPlants = SBP;}
+public void setSpaceBetweenRows(double SBR) {spaceBetweenRows = SBR;}
+public void setAmountOfPlants(int AOP) {amountOfPlants = AOP;}
+public void setNameOfPlant(String vname) {name = vname;}
 
+public double getSpaceBetwenPlants() {return spaceBetweenPlants;}
+public double getSpaceBetweenRows() {return spaceBetweenRows;}
+public int getAmountOfPlants() {return amountOfPlants;}
+public String getNameOfPlant() {return name;}
 
 public double lengthNeeded() {
 	
@@ -24,7 +28,7 @@ public double widthNeeded() {
 }
 public double areaNeeded() {
 	
-	return(spaceBetweenPlants / 12 * spaceBetweenRows /12) * amountOfPlants; 
+	return(getSpaceBetwenPlants() / 12 * getSpaceBetweenRows() /12) * getAmountOfPlants(); 
 }
 
 }

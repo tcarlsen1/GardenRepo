@@ -15,8 +15,8 @@
 		Corn Quantity: <input type="text" name="corn"> <br>
 		Tomato Quantity: <input type="text" name="tomato"> <br>
 		Spinach Quantity: <input type="text" name="spinach"> <br>
-		Garden length: <input type="text" name="glength"> <br>
-		Garden width: <input type="text" name="gwidth"> <br> <input
+		Garden length: <input type="text" name="gLength"> <br>
+		Garden width: <input type="text" name="gWidth"> <br> <input
 			type="submit">
 
 

@@ -2,15 +2,18 @@ package com.tcarlsen.web.model;
 
 public class Garden {
 	private double gardenWidth;
-	private double gardenHeight;
+	private double gardenLength;
 	
-	double getGardenArea() {
-		return gardenWidth * gardenHeight;
+public	void setGardenWidth(double GW) {gardenWidth = GW;}
+public	void setGardenLength(double GH) {gardenLength = GH;}
+	
+public double getGardenArea() {
+		return gardenWidth * gardenLength;
 	}
 	
-	double gardenAreaNeeded(Vegtables vegArry[]) {
+public double gardenAreaNeeded(Vegetables vegArry[]) {
 		double sum = 0;
-		for(Vegtables v: vegArry) {
+		for(Vegetables v: vegArry) {
 			sum += v.areaNeeded();
 		}
 		return sum;
